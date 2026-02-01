@@ -1,0 +1,315 @@
+﻿@page "/"
+
+<PageTitle>MHC - Expert Guidance for Your Legal Needs</PageTitle>
+
+<div class="demo-disclaimer">
+    <div class="disclaimer-content">
+        <span class="disclaimer-icon">ℹ️</span>
+        <p class="disclaimer-text">
+            <strong>Demo Site:</strong> This is a demonstration website.
+            All content is fictional and for illustrative purposes only.
+        </p>
+    </div>
+</div>
+
+
+<!-- Hero Section -->
+<section id="home" class="hero-section">
+    <div class="hero-content">
+        <h1 class="hero-title">YOUR LIFE, YOUR LEGACY, YOUR WAY</h1>
+        <p class="hero-subtitle">Expert Guidance for Your Legal Needs</p>
+        <div class="hero-cta">
+            <button class="btn-primary">Schedule a Consultation</button>
+            <button class="btn-secondary" @onclick="OpenContactModal">Contact Us</button>
+        </div>
+    </div>
+</section>
+
+<!-- Local Focus Section -->
+<section id="local" class="local-focus-section">
+    <div class="container">
+        <div class="local-badge-container">
+            <div class="local-badge">
+                <span class="badge-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+                </span>
+                <span class="badge-text">Quality Service</span>
+            </div>
+            <div class="local-badge">
+                <span class="badge-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </span>
+                <span class="badge-text">Family Owned</span>
+            </div>
+            <div class="local-badge">
+                <span class="badge-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </span>
+                <span class="badge-text">Community First</span>
+            </div>
+        </div>
+
+        <h2 class="section-title">Serving Our Local Community</h2>
+        <p class="section-subtitle">We partner with local businesses and professionals to bring you the best service</p>
+
+        <div class="local-grid">
+            <!-- Local Partners -->
+            <div class="local-card">
+                <div class="local-card-header">
+                    <span class="local-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </span>
+                    <h3>Local Partners</h3>
+                </div>
+                <div class="local-card-content">
+                    <p class="local-description">We proudly partner with local businesses and organizations to provide exceptional service to our community.</p>
+                    <div class="local-partners">
+                        <div class="partner-item">
+                            <span class="partner-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
+                            </span>
+                            <div class="partner-info">
+                                <strong>Partner Business A</strong>
+                                <span class="partner-location">Local collaboration</span>
+                            </div>
+                        </div>
+                        <div class="partner-item">
+                            <span class="partner-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/><path d="M22 7v3a2 2 0 0 1-2 2v0a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12v0a2 2 0 0 1-2-2V7"/></svg>
+                            </span>
+                            <div class="partner-info">
+                                <strong>Partner Business B</strong>
+                                <span class="partner-location">Community support</span>
+                            </div>
+                        </div>
+                        <div class="partner-item">
+                            <span class="partner-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+                            </span>
+                            <div class="partner-info">
+                                <strong>Partner Business C</strong>
+                                <span class="partner-location">Local service</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Local Services -->
+            <div class="local-card">
+                <div class="local-card-header">
+                    <span class="local-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+                    </span>
+                    <h3>Our Services</h3>
+                </div>
+                <div class="local-card-content">
+                    <p class="local-description">Supporting our community with quality services and dedication to excellence.</p>
+                    <div class="local-partners">
+                        <div class="partner-item">
+                            <span class="partner-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            </span>
+                            <div class="partner-info">
+                                <strong>Service Option A</strong>
+                                <span class="partner-location">Available now</span>
+                            </div>
+                        </div>
+                        <div class="partner-item">
+                            <span class="partner-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                            </span>
+                            <div class="partner-info">
+                                <strong>Service Option B</strong>
+                                <span class="partner-location">Custom solutions</span>
+                            </div>
+                        </div>
+                        <div class="partner-item">
+                            <span class="partner-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                            </span>
+                            <div class="partner-info">
+                                <strong>Service Option C</strong>
+                                <span class="partner-location">Professional support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Community Involvement -->
+            <div class="local-card local-card-featured">
+                <div class="local-card-header">
+                    <span class="local-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </span>
+                    <h3>Community Impact</h3>
+                </div>
+                <div class="local-card-content">
+                    <p class="local-description">MHC is proud to serve and support our local community.</p>
+                    <div class="impact-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Years in Business</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">Happy Customers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5★</div>
+                            <div class="stat-label">Customer Rating</div>
+                        </div>
+                    </div>
+                    <div class="community-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">✓</span>
+                            <span>Supporting local community events</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">✓</span>
+                            <span>Committed to excellence and quality</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">✓</span>
+                            <span>Trusted by families in the area</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service Area Map -->
+        <div class="delivery-area">
+            <div class="delivery-content">
+                <div class="delivery-info">
+                    <h3 class="delivery-title">
+                        <span class="delivery-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </span>
+                        Service Area
+                    </h3>
+                    <p class="delivery-description">Proudly serving the local community and surrounding areas.</p>
+                    <div class="delivery-areas">
+                        <span class="area-badge">Downtown</span>
+                        <span class="area-badge">North District</span>
+                        <span class="area-badge">South District</span>
+                        <span class="area-badge">East Side</span>
+                        <span class="area-badge">West Side</span>
+                        <span class="area-badge">Suburbs</span>
+                    </div>
+                    <button class="btn-primary" @onclick="OpenContactModal">Contact Us Today</button>
+                </div>
+                <div class="delivery-visual">
+                    <div class="map-placeholder">
+                        <span class="map-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>
+                        </span>
+                        <p>Local Service Area</p>
+                        <span class="store-marker">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            MHC
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="features-section">
+    <div class="container">
+        <h2 class="section-title">Why Choose Us</h2>
+        <p class="section-subtitle">Experience the MHC difference</p>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m14 13-7.5 7.5c-.83.83-2.17.83-3 0 0 0 0 0 0 0a2.12 2.12 0 0 1 0-3L11 10"/><path d="m16 16 6-6"/><path d="m8 8 6-6"/><path d="m9 7 8 8"/><path d="m21 11-8-8"/></svg>
+                </div>
+                <h3>Legal Expertise</h3>
+                <p>Specializing in defense, appeals, and comprehensive legal counseling for all your needs.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                </div>
+                <h3>Diverse Practice Areas</h3>
+                <p>From labour to commercial law, we cover a wide range of legal specialties.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                </div>
+                <h3>Client-Focused Approach</h3>
+                <p>We prioritize your needs and work closely with you for successful outcomes.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                </div>
+                <h3>Experienced Professionals</h3>
+                <p>Our team consists of seasoned lawyers and consultants dedicated to your case.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg>
+                </div>
+                <h3>Transparent Pricing</h3>
+                <p>We offer clear and fair pricing structures, ensuring no hidden fees.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <h3>Timely Support</h3>
+                <p>Count on us for timely legal advice and representation when you need it most.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About MHC</h2>
+                <p>MHC is committed to providing exceptional legal services, grounded in integrity and expertise. Our mission is to empower clients through professional guidance, ensuring their rights are protected and their needs are met with diligence and care.</p>
+                <p>We believe in building lasting relationships with our customers and supporting the local community. When you choose us, you're partnering with a business that truly cares about your success and satisfaction.</p>
+                <button class="btn-primary">Schedule a Consultation</button>
+            </div>
+            <div class="about-image">
+                <div class="placeholder-image">
+                    <span>Business Photo</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section id="contact" class="cta-section">
+    <div class="container">
+        <h2>Get In Touch Today!</h2>
+        <p>Experience the MHC difference for yourself</p>
+        <button class="btn-cta">Schedule a Consultation</button>
+    </div>
+</section>
+
+<ContactFormModal @bind-IsOpen="_isContactModalOpen" />
+
+@code {
+    private bool _isContactModalOpen = false;
+
+    private void OpenContactModal()
+    {
+        _isContactModalOpen = true;
+    }
+}
