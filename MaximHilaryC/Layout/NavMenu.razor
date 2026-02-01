@@ -1,0 +1,36 @@
+﻿<nav class="navbar-main">
+    <div class="navbar-container">
+        <a class="navbar-brand" href="/">
+            <span class="logo-text">MHC</span>
+        </a>
+
+        <button class="navbar-toggler" @onclick="ToggleNavMenu" aria-label="Toggle navigation">
+            <span class="navbar-toggler-line"></span>
+            <span class="navbar-toggler-line"></span>
+            <span class="navbar-toggler-line"></span>
+        </button>
+
+        <div class="navbar-menu @NavMenuCssClass">
+            <a class="nav-link" href="#home" @onclick="CloseNavMenu">Home</a>
+            <a class="nav-link" href="#features" @onclick="CloseNavMenu">Features</a>
+            <a class="nav-link" href="#about" @onclick="CloseNavMenu">About</a>
+            <a class="nav-link" href="#contact" @onclick="CloseNavMenu">Contact</a>
+        </div>
+    </div>
+</nav>
+
+@code {
+    private bool isMenuOpen = false;
+
+    private string NavMenuCssClass => isMenuOpen ? "show" : "";
+
+    private void ToggleNavMenu()
+    {
+        isMenuOpen = !isMenuOpen;
+    }
+
+    private void CloseNavMenu()
+    {
+        isMenuOpen = false;
+    }
+}
