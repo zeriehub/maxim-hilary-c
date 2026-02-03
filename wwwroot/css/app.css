@@ -135,8 +135,8 @@ code {
    ============================================ */
 
 :root {
-    --primary-color: #2d3d49;
-    --secondary-color: #2d3d49;
+    --primary-color: #968138;
+    --secondary-color: #32424fb7;
     --accent-color: #2d3d49;
     --text-dark: #1a202c;
     --text-light: #4a5568;
@@ -155,7 +155,8 @@ code {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.1);
+    /* background: rgba(255, 255, 255, 0.1); */
+    background:  rgba(0, 0, 0, 0.575);;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -759,7 +760,7 @@ code {
    ============================================ */
 
 .footer-main {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.575);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
