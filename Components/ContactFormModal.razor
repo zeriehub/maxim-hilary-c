@@ -375,18 +375,19 @@
 
         try
         {
-            var formData = new Dictionary<string, string>
+            var formData = new
             {
-                { "name", _fullName },
-                { "contact", _contactMethod },
-                { "subject", _lawSubject },
-                { "message", _details }
+                name = _fullName,
+                contact = _contactMethod,
+                subject = _lawSubject,
+                message = _details
             };
 
-            var response = await Http.PostAsync(
-                FormspreeEndpoint,
-                new FormUrlEncodedContent(formData)
-            );
+            var request = new HttpRequestMessage(HttpMethod.Post, FormspreeEndpoint);
+            request.Content = JsonContent.Create(formData);
+            request.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+
+            var response = await Http.SendAsync(request);
 
             if (response.IsSuccessStatusCode)
             {
